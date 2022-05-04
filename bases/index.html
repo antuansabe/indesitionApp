@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Vue Intro</title>
+        <meta charset="UTF-8">
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.30/vue.global.min.js"></script>
+
+        
+    </head>
+    <body>
+        <div id="myApp">
+            <h1> Batman quotes <small>{{newQuote}}</small>  </h1>  
+            <input 
+            type="text"
+            v-model="newQuote" 
+            v-on:keypress.enter="addQuote"> 
+            
+            </input>
+
+            <hr> </hr>           
+            <ul>
+                <li v-for=" ( {quote, author}, index) in quotes">
+                    <span> {{ index + 1 }} - {{ quote }} </span>
+                    <blockquote v-show="false"> {{ author }} </blockquote>
+                </li>
+            
+                
+            </ul>
+        </div>
+
+
+        <script src="app.js">  </script>
+
+    </body>
+</html>
