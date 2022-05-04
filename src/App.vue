@@ -1,15 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</template>
+  <Indesition />
+</template>gi
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Indesition from './components/Indesition.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Indesition
   }
 }
 </script>
